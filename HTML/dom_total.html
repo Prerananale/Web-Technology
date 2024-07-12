@@ -1,0 +1,20 @@
+<script type="text/javascript">
+function msg()
+{
+alert("Sample Program for addition of two numbers");
+}
+function addition()
+{
+var a=parseInt(document.f1.t1.value);
+var b=parseInt(document.f1.t2.value);
+var c=a+b;
+document.f1.t3.value=c;
+}
+</script>
+<body onload="msg()">
+<form name="f1">
+Enter First No.:<input type="text" name="t1" value=""/></br> </br>
+Enter Second No.:<input type="text" name="t2" value="" onchange="addition()"/></br></br>
+Total is:<input type="text" name="t3" value=""/>
+</form>
+</body>

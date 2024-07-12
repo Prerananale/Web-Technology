@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+	$pat1 = /^\d{6}$/;
+	$pat2 = /^\d{10}$/;
+	$pat3 = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}/;
+	$pat4 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+	if(document.myform.t1.value=="")
+	{
+	alert("please enter the name");
+	document.myform.t1.focus();
+	return false;
+	}
+	if(!$pat4.test(document.myform.t2.value))
+	{
+	alert("please enter the valid Email");
+	document.myform.t2.focus();
+	return false;
+	}
+	if(!$pat2.test(document.myform.t3.value))
+	{
+	alert("please enter the  valid Mobileno");
+	document.myform.t3.focus();
+	return false;
+	}
+	if(!$pat1.test(document.myform.t4.value))
+	{
+	alert("please enter the valid pin");
+	document.myform.t4.focus();
+	return false;
+	}
+	if(!$pat3.test(document.myform.t5.value))
+	{
+	alert("please enter the valid Password");
+	document.myform.t5.focus();
+	return false;
+	}
+	return true;
+}
+</script>
+<title> Registration Page</title>
+
+</head>
+<body bgcolor="skyblue" >
+<form action="" name="myform" onsubmit="return(validate());">
+<h1><center><font  face="FreeMono"><u>REGISTRATION FORM</u></font></center></h1>
+<center>
+Name:<input type="text" name="t1" value=""/></br></br>
+
+Email:<input type="text" name="t2" value=""/></br></br>
+
+Mobileno:<input type="text" name="t3" value=""/></br></br>
+
+Address:<textarea></textarea></br></br>
+
+Pin:<input type="text" name="t4" value=""/></br></br>
+
+Password:<input type="password" name="t5" value=""/></br>
+
+<input type="Submit" name="b1" value="Submit"/></br></br>
+
+<center>
+</form>
+</body>
+</html>
+

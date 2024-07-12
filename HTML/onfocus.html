@@ -1,0 +1,19 @@
+<script type="text/javascript">
+function add()
+{
+var a=parseInt(document.f1.t1.value);
+var b=parseInt(document.f1.t2.value);
+var c=a+b;
+document.f1.t3.value=c;
+}
+function demo()
+{
+alert("Data Saved Successfully");
+}
+</script>
+<form name="f1" onsubmit="demo()">
+Enter First No.:<input type="text" name="t1" value=""/></br>
+Enter Second No.:<input type="text" name="t2" value=""/></br>
+Total is:<input type="text" name="t3" value="" onfocus="add()"/></br>
+<input type="submit" name="b1" value="Save"/>
+</form>
