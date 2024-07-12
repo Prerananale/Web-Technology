@@ -1,0 +1,14 @@
+
+
+
+
+<web-app>  
+<servlet>  
+<servlet-name>yogesh</servlet-name>  
+<servlet-class>First</servlet-class>  
+</servlet>   
+<servlet-mapping>  
+<servlet-name>yogesh</servlet-name>  
+<url-pattern>/LoginInt</url-pattern>  
+</servlet-mapping>  
+</web-app>  
